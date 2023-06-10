@@ -10,10 +10,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddInfraStructureServices();
 builder.Services.AddApplicationCoreServices();
 
-var connectionString = builder.Configuration.GetConnectionString("PayVortex");
+var connectionString = builder.Configuration.GetConnectionString("TaskManagement");
 if (string.IsNullOrEmpty(connectionString))
 {
-    throw new InvalidOperationException("Connection string 'PayVortex' not found.");
+    throw new InvalidOperationException("Connection string 'TaskManagement' not found.");
 }
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(connectionString));
