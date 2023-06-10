@@ -9,10 +9,10 @@ namespace ApplicationCore.Interfaces.Services
 {
     public interface IAssignmentService
     {
-        public Task<Assignment> GetAssignmentByIdAsync(int AssignmentId);
+        public Task<Assignment> GetAssignmentByIdAsync(int assignmentId);
         public Task<List<Assignment>> GetAssignmentsAsync();
         public Task<Assignment> CreateAssignment(Assignment Assignment);
         public Task<Assignment> UpdateAssignment(Assignment AssignmentUpdate);
-        public Task DeleteAssignment(int AssignmentId);
+        public Task DeleteAssignment(int assignmentId);
     }
 }

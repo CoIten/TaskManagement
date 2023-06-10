@@ -1,6 +1,7 @@
 ﻿using ApplicationCore.Interfaces.Repos;
 using ApplicationCore.Interfaces.Services;
 using ApplicationCore.Models.Assignment;
+using ApplicationCore.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,31 +13,57 @@ namespace ApplicationCore.Services.Implementations
 {
     public class AssignmentService : IAssignmentService
     {
-        private readonly IAssignmentRepository _AssignmentRepository;
+        private readonly IAssignmentRepository _assignmentRepository;
 
-        public AssignmentService(IAssignmentRepository AssignmentRepository)
+        public AssignmentService(IAssignmentRepository assignmentRepository)
         {
-            _AssignmentRepository = AssignmentRepository;
+            _assignmentRepository = assignmentRepository;
         }
 
         public async Task<Assignment> GetAssignmentByIdAsync(int AssignmentId)
         {
-            return await _AssignmentRepository.GetAssignmentById(AssignmentId);
+            return await _assignmentRepository.GetAssignmentById(AssignmentId);
         }
 
-        public void CreateAssignment(Assignment Assignment)
+        public async Task<List<Assignment>> GetAssignmentsAsync()
         {
-
+            return await _assignmentRepository.GetAssignmentsAsync();
         }
 
-        public void UpdateAssignment(Assignment Assignment)
+        public async Task<Assignment> CreateAssignment(Assignment Assignment)
         {
-
+            var createdAssignment = await _assignmentRepository.CreateAssignment(Assignment);
+            return createdAssignment;
         }
 
-        public void DeleteAssignment(int AssignmentId)
+        public async Task<Assignment> UpdateAssignment(Assignment Assignment)
         {
+            var existentAssignment = await _assignmentRepository.GetAssignmentById(Assignment.Id);
+            if (existentAssignment == null)
+            {
+                throw new Exception("Assignment Not Found!");
+            }
 
+            existentAssignment.Title = Assignment.Title;
+            existentAssignment.Description = Assignment.Description;
+            existentAssignment.Status = Assignment.Status;
+            existentAssignment.Priority = Assignment.Priority;
+            existentAssignment.DueDate = Assignment.DueDate;
+            existentAssignment.AssignedTo = Assignment.AssignedTo;
+
+            await _assignmentRepository.UpdateAssignment(existentAssignment);
+            return existentAssignment;
+        }
+
+        public async Task DeleteAssignment(int assignmentId)
+        {
+            var existentAssignment = await _assignmentRepository.GetAssignmentById(assignmentId);
+            if (existentAssignment == null)
+            {
+                throw new Exception("User Not Found!");
+            }
+
+            await _assignmentRepository.DeleteAssignment(existentAssignment);
         }
     }
 }

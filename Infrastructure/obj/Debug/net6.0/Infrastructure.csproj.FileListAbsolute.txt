@@ -10,3 +10,8 @@ C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\Infra
 C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
 C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\admin\source\repos\TaskManagement\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+C:\Users\admin\source\repos\TaskManagement\Infrastructure\bin\Debug\net6.0\ApplicationCore.dll
+C:\Users\admin\source\repos\TaskManagement\Infrastructure\bin\Debug\net6.0\ApplicationCore.pdb
+C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\admin\source\repos\TaskManagement\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
