@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9YyX/TbO8jpUJNGAJc4nmtDTxVQFJhWXi/43e24znWQgzMIpENlCL8E2f3Wlxln/cH//fKOoAbhZKuA66kb1EA==",
+  "dgSpecHash": "S5gJdmKM1H1+ODsSJPT2a4OZFX7SiPZr7Ijl4Vq0QRoN86lA7+J6MVOByBuHXKYkqQ4A2BbF0rE4O8buNSqY9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
