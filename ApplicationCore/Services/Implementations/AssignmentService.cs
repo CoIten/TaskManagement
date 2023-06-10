@@ -1,4 +1,6 @@
-﻿using ApplicationCore.Models.Assignment;
+﻿using ApplicationCore.Interfaces.Repos;
+using ApplicationCore.Interfaces.Services;
+using ApplicationCore.Models.Assignment;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -17,13 +19,14 @@ namespace ApplicationCore.Services.Implementations
             _AssignmentRepository = AssignmentRepository;
         }
 
-        public async Task<Assignment> GetAssignmentById(int assignmentId)
+        public async Task<Assignment> GetAssignmentByIdAsync(int AssignmentId)
         {
-            return await _AssignmentRepository.GetAssignmentById(assignmentId);
+            return await _AssignmentRepository.GetAssignmentById(AssignmentId);
         }
 
         public void CreateAssignment(Assignment Assignment)
         {
+
         }
 
         public void UpdateAssignment(Assignment Assignment)
@@ -31,7 +34,7 @@ namespace ApplicationCore.Services.Implementations
 
         }
 
-        public void DeleteAssignment(int assignmentId)
+        public void DeleteAssignment(int AssignmentId)
         {
 
         }

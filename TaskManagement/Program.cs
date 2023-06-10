@@ -1,7 +1,22 @@
+using Infrastructure.Contexts;
+using Microsoft.EntityFrameworkCore;
+using TaskManagementSystem;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddInfraStructureServices();
+builder.Services.AddApplicationCoreServices();
+
+var connectionString = builder.Configuration.GetConnectionString("PayVortex");
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new InvalidOperationException("Connection string 'PayVortex' not found.");
+}
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
