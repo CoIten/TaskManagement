@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\TaskManagement\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\admin\\source\\repos\\TaskManagement\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\TaskManagement\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\TaskManagement\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
