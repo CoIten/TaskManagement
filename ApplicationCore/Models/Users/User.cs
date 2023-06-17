@@ -10,8 +10,8 @@ namespace ApplicationCore.Models.Users
 {
     public class User
     {
-        [Required]
         [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required]
@@ -38,12 +38,11 @@ namespace ApplicationCore.Models.Users
         public string Email { get; set; }
 
         [Required]
-        [RegularExpression(@"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=.*[a-zA-Z]).{8,}$")]
-        [DataType(DataType.Password)]
-        [NotMapped]
-        public string Password { get; set; }
-
+        [Column(TypeName = "nvarchar(200)")]
         public string PasswordSalt { get; set; }
+
+        [Required]
+        [Column(TypeName = "nvarchar(200)")]
         public string HashedPassword { get; set; }
 
     }
