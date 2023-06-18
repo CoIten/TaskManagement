@@ -1,4 +1,5 @@
 ﻿using ApplicationCore.Models.Assignment;
+using ApplicationCore.Models.UserAssignments;
 using ApplicationCore.Models.Users;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,6 +19,7 @@ namespace Infrastructure.Contexts
 
         public DbSet<User> Users { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
+        public DbSet<UserAssignment> UserAssignments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

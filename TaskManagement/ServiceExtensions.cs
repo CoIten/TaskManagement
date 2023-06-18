@@ -11,14 +11,15 @@ namespace TaskManagementSystem
         {
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAssignmentRepository, AssignmentRepository>();
+            services.AddScoped<IUserAssignmentRepository, UserAssignmentRepository>();
             return services;
         }
 
         public static IServiceCollection AddApplicationCoreServices(this IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAssignmentService, AssignmentService>();
+            services.AddScoped<IUserAssignmentService, UserAssignmentService>();
             return services;
         }
     }

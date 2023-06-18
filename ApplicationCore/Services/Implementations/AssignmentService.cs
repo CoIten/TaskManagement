@@ -49,7 +49,6 @@ namespace ApplicationCore.Services.Implementations
             existentAssignment.Status = Assignment.Status;
             existentAssignment.Priority = Assignment.Priority;
             existentAssignment.DueDate = Assignment.DueDate;
-            existentAssignment.AssignedToUser = Assignment.AssignedToUser;
 
             await _assignmentRepository.UpdateAssignment(existentAssignment);
             return existentAssignment;

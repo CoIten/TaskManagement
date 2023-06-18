@@ -1,4 +1,5 @@
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\bin\Debug\net6.0\ApplicationCore.deps.json
+C:\Users\admin\source\repos\TaskManagement\ApplicationCore\bin\Debug\net6.0\ApplicationCore.runtimeconfig.json
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\bin\Debug\net6.0\ApplicationCore.dll
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\bin\Debug\net6.0\ApplicationCore.pdb
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ApplicationCore.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\Appl
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ApplicationCore.dll
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\refint\ApplicationCore.dll
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ApplicationCore.pdb
-C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ref\ApplicationCore.dll
-C:\Users\admin\source\repos\TaskManagement\ApplicationCore\bin\Debug\net6.0\ApplicationCore.runtimeconfig.json
 C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ApplicationCore.genruntimeconfig.cache
+C:\Users\admin\source\repos\TaskManagement\ApplicationCore\obj\Debug\net6.0\ref\ApplicationCore.dll

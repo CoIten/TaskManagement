@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using ApplicationCore.Models.Users;
 using ApplicationCore.Models.Assignments;
+using ApplicationCore.Models.UserAssignments;
 
 namespace ApplicationCore.Models.Assignment
 {
@@ -42,8 +43,5 @@ namespace ApplicationCore.Models.Assignment
         [Required]
         [DataType(DataType.DateTime)]
         public DateTime DueDate { get; set; }
-
-        [Required]
-        public User AssignedToUser { get; set; }
     }
 }
